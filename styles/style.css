@@ -1,7 +1,7 @@
 /* --------------fonts
 ------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Redressed&family=Roboto+Condensed&family=Ubuntu&display=swap');
- 
+
 /* ---------common style 
 -------------------------------*/
 body{
@@ -38,7 +38,7 @@ font-weight: bold;
 font-size: 64px;
 line-height: 1.5em;
 }
-.anchor a{
+.anchor {
 position: absolute;
 top:550px;
 left:150px;
@@ -48,7 +48,19 @@ border-radius: 10px;
 padding: 10px 24px;
 color:white;
 background: #E02C6D;
+box-shadow: inset 0 0 0 0 cyan;
+transition: ease-in-out 0.3s;
 }
+.top-button:hover button{
+    box-shadow: inset 300px 0 0 0 cyan;
+    font-size: 2em;
+    color:black;
+    font-weight: 700;
+}
+.icon{
+    padding-left: 10px;
+}
+
 .banner img{
     position: absolute;
 width: 556.01px;
@@ -58,21 +70,59 @@ top: 125px;
 margin-right: 198px;
 }
 .player-area{
-    position: absolute;
-   top:650px;
-    margin-top: 70px;
+position: absolute;
+top:650px;
+ margin-top: 70px;
+}
+
+.top-players{
+    position: relative;
+    left:200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px;
+    justify-items: center;
+  
 }
 .player-detail{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
+    border: 1px solid whitesmoke;
+    height:500px;
+    width:300px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    
+
 }
-.players{
-    display:flex;
-   flex-direction: row;
-   align-items: flex-start;
+
+.about-player h3{
+    font-size: 30px;
+    font-weight: 700;
 }
 .player-detail .player img{
     height:300px;
     width:300px;
 }
+.footer-image img{
+    position: absolute;
+    top:3000px;
+    left: 400px;
+    height: 110px;
+    width:483px;
+}
+.footer-icon{
+    position:absolute;
+    top:3100px;
+    left:600px;
+   
+}
+.fa-brands{
+    font-size: 32px;
+    margin: 20px 14px;
+    color:lightslategray ;
+}
+.footer-icon p{
+    font-weight: 700;
+}
+
